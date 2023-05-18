@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helados mas alla del muro</title>
+</head>
+<body>
+    
+    <table class="datos">
+        <thead>
+            <th>Fecha </th>
+            <th>Sabor</th>
+            <th>cantidad</th>
+            <th>gramos_unidad</th>
+        </thead>
+        <tbody>
+            {% for c in ventas %}
+            <tr>
+
+                <td>{{c.fecha_venta }}</td>
+                
+                <td>{{c.sabor_helado}}</td>
+
+                <td>{{c.cantidad}}</td>
+
+                <td>{{c.gramos_unidad}}</td>
+
+
+            
+            </tr>
+            {% endfor %}
+
+        </tbody>
+       
+      </table>
+
+    
+
+</body>
+</html>
